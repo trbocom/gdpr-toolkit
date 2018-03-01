@@ -2,7 +2,7 @@
 
 const self = module.exports = {
 
-  anonymize(ip) {
+  anonymizeIp(ip) {
     const octets = ip.split('.')
     if (octets.length < 4) {
       return ip

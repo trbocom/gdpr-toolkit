@@ -1,4 +1,4 @@
-const gdpr = require('./gdpr')
+const gdpr = require('./index')
 
 describe('ip', function() {
   describe('#anonymize()', function() {
