@@ -11,5 +11,8 @@ describe('ip', function() {
     it('does not fail when it is empty', function() {
       expect(gdpr.anonymizeIp('')).to.eq('')
     });
+    it('does not fail when it is undefined', function() {
+      expect(gdpr.anonymizeIp(undefined)).to.eq(undefined)
+    });
   });
 });
