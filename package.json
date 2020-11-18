@@ -7,7 +7,7 @@
   "author": "Dominik Grusemann <dominik.grusemann@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prepublish": "yarn run test",
+    "prepublish": "yarn lint && yarn test",
     "test": "mocha src/*.spec.js test --recursive",
     "lint": "eslint 'src/**/*.js'"
   },
