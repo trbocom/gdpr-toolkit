@@ -1,8 +1,6 @@
-'use strict'
+module.exports = {
 
-const self = module.exports = {
-
-  anonymizeIp(ip) {
+  anonymizeIp (ip) {
     if (ip) {
       const octets = ip.split('.')
       if (octets.length < 4) {
