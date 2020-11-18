@@ -1,5 +1,4 @@
 module.exports = {
-
   anonymizeIp (ip) {
     if (ip) {
       const octets = ip.split('.')
@@ -9,5 +8,4 @@ module.exports = {
       return ip
     }
   }
-
 }
