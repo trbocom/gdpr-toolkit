@@ -13,6 +13,7 @@ yarn add gdpr-toolkit
 const gdpr = require('gdpr-toolkit')
 
 gdpr.anonymizeIp(ip)
+```
 
 ## Licence
 
