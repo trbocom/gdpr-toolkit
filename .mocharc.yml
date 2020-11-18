@@ -1,0 +1,8 @@
+recursive: true
+require:
+  - 'chai'
+  - 'chai/register-expect'
+reporter: spec
+ignoreLeaks: true
+timeout: 3000
+exit: true
