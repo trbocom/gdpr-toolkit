@@ -1,5 +1,5 @@
 # gdpr-toolkit
-A library to easier comply with GDPR regulations (anonymization, pseudonymization)
+A library to easier comply with GDPR regulations (anonymization, pseudonymization) in JavaScript applications with *zero* production dependencies.
 
 ## Installation
 
