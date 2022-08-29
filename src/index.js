@@ -5,11 +5,20 @@ function anonymizeIpv4 (ip) {
   return octets[0] + '.' + octets[1] + '.' + octets[2] + '.' + '0'
 }
 
-function anonymizeIpv6 (ip) {
-  const hexs = ip.split(':')
-  if (hexs.length < 8) return ip
+function unshortenIpv6 (ip) {
+  if (ip.indexOf('::') === -1) return ip
 
-  return hexs[0] + ':' + hexs[1] + ':' + hexs[2] + ':' + hexs[3] + ':' + '0:0:0:0'
+  const groups = ip.split(/[0-9a-f]:[0-9a-f]/).length + 1
+
+  return ip.replace('::', ':0'.repeat(8 - groups) + ':')
+}
+
+function anonymizeIpv6 (ip) {
+  ip = unshortenIpv6(ip)
+  const groups = ip.split(':')
+  if (groups.length < 8) return ip
+
+  return groups[0] + ':' + groups[1] + ':' + groups[2] + ':' + groups[3] + ':' + '0:0:0:0'
 }
 
 module.exports = {
