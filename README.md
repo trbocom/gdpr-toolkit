@@ -1,6 +1,8 @@
 # gdpr-toolkit
 A library to easier comply with GDPR regulations (anonymization, pseudonymization) in JavaScript applications with *zero* production dependencies.
 
+Supports IPv4 and IPv6 addresses.
+
 ## Installation
 
 ```
