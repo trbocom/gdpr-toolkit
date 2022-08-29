@@ -36,6 +36,10 @@ describe('ip', function () {
       it('sets the last 64 bits of a shortened (end) IPv6 address to 0', function () {
         expect(gdpr.anonymizeIp('2001:4860:4860::')).to.eq('2001:4860:4860:0:0:0:0:0')
       })
+
+      it('does not fail with invalid shortened addresses', function () {
+        expect(gdpr.anonymizeIp('2a02:810d:f00:7498::2492:dc94:82a4:9203:9203')).to.eq('2a02:810d:f00:7498:0:0:0:0')
+      })
     })
   })
 })
