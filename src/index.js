@@ -7,6 +7,7 @@ function anonymizeIpv4 (ip) {
 
 function unshortenIpv6 (ip) {
   if (ip.indexOf('::') === -1) return ip
+  if (ip.indexOf('::') === 0) ip = '0' + ip
 
   const groups = ip.split(/[0-9a-f]:[0-9a-f]/).length + 1
 

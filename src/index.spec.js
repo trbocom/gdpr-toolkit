@@ -25,6 +25,10 @@ describe('ip', function () {
         expect(gdpr.anonymizeIp('2a02:810d:f00:7498:2492:dc94:82a4:9203')).to.eq('2a02:810d:f00:7498:0:0:0:0')
       })
 
+      it('sets the last 64 bits of a shortened (beginning) IPv6 address to 0', function () {
+        expect(gdpr.anonymizeIp('::2001:4860:4860:0')).to.eq('0:0:0:0:0:0:0:0')
+      })
+
       it('sets the last 64 bits of a shortened (middle) IPv6 address to 0', function () {
         expect(gdpr.anonymizeIp('2001:db8::8a2e:370:7334')).to.eq('2001:db8:0:0:0:0:0:0')
       })
