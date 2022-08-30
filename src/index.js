@@ -20,7 +20,7 @@ function anonymizeIpv6 (ip) {
   const groups = ip.split(':')
   if (groups.length < 8) return ip
 
-  return groups[0] + ':' + groups[1] + ':' + groups[2] + ':' + groups[3] + ':' + '0:0:0:0'
+  return groups[0] + ':' + groups[1] + ':' + groups[2] + ':' + '0:0:0:0:0'
 }
 
 module.exports = {
