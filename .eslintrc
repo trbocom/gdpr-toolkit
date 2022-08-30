@@ -1,7 +1,10 @@
 {
   "extends": [
-    "@chatchamp/eslint-config"
+    "eslint:recommended"
   ],
+  "globals": {
+    "expect": true
+  },
   "env": {
     "mocha": true,
     "node": true,

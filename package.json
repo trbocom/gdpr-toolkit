@@ -1,6 +1,6 @@
 {
   "name": "gdpr-toolkit",
-  "version": "1.0.5",
+  "version": "1.1.5",
   "description": "A library to easier comply with GDPR regulations (anonymization, pseudonymization)",
   "main": "src/index.js",
   "repository": "https://github.com/chatchamp/gdpr-toolkit.git",
@@ -12,9 +12,9 @@
     "lint": "eslint 'src/**/*.js'"
   },
   "devDependencies": {
-    "@chatchamp/eslint-config": "^1.0.10",
     "babel-eslint": "^10.1.0",
-    "chai": "^4.1.2",
+    "chai": "4.3.4",
+    "eslint": "^8.23.0",
     "mocha": "^10.0.0"
   }
 }
