@@ -34,7 +34,7 @@ const ipv6 = 'e2ae:3624:7586:f0c4:5b14:39f0:1560:2e83'
 const ipv6a = gdpr.anonymizeIp(ipv6)
 
 console.log(ipv6a)
-// e2ae:3624:7586:f0c4:0:0:0:0
+// e2ae:3624:7586:0:0:0:0:0
 ```
 
 ## Licence
